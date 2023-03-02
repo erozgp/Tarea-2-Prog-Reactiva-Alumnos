@@ -3,7 +3,7 @@ using System.Runtime.InteropServices;
 
 namespace Tarea_2_Prog_Reactiva_Alumnos
 {
-    internal class PrincipalFuntion
+    internal class PrincipalProcess
     {
 
         static void Main(string[] args)
@@ -17,8 +17,6 @@ namespace Tarea_2_Prog_Reactiva_Alumnos
                 Console.WriteLine($"Se agrego {alumno.Name}, que tiene {alumno.Age} años y su mail {alumno.Email}");
             };
 
-            //Definición del alumno
-            Alumno alumno;
 
             //Creación de los alumnos en tracking
             for (int i = 0; i < 5; i++)
@@ -37,7 +35,7 @@ namespace Tarea_2_Prog_Reactiva_Alumnos
             //Creación del mensaje a lanzar durante el evento de eliminación
             trackings.ObserverEventRmv += (sender, alumno) =>
             {
-                Console.WriteLine($"Se elimino {alumno.Name}");
+                Console.WriteLine($"Se eliminó {alumno.Name}");
             };
 
             //Eliminación del alumno
