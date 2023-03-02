@@ -47,7 +47,7 @@ namespace Tarea_2_Prog_Reactiva_Alumnos
             }
             
             //Muestra los alumnos actualmente trackeados
-            trackings.ShowTrackeds();
+            //trackings.ShowTrackeds();
         }
 
     }
